@@ -1,3 +1,314 @@
----
----
+h1, h2, h3 {
+  font-family: "Avenir Light", "Arial Light", sans-serif;
+}
 
+h4, h5, p {
+  font-family: "Roboto";
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+}
+
+#bar-1 {
+  background-color: #515151;
+  background-position: bottom;
+}
+
+#bar-2 {
+  background-color: #656565;
+  vertical-align: bottom;
+}
+
+#bar-3 {
+  background-color: #727272;
+}
+
+#bar-4 {
+  background-color: #7e7e7e;
+}
+
+#bar-5 {
+  background-color: #8d8d8d;
+}
+
+#bar-6 {
+  background-color: #9f9f9f;
+}
+
+#bar-7 {
+  background-color: #b2b2b2;
+}
+
+#resumeButton {
+  font-size: 35px;
+  width: 250px;
+  height: 100px;
+}
+
+#tab {
+  padding-left: 100px;
+}
+
+.spaceleft {
+  padding-left: 10px;
+}
+
+#left-border {
+  border-left: 2px solid white;
+  margin-bottom: 40px;
+}
+
+#full-border {
+  border-top: 2px solid white;
+}
+
+#titlepage {
+  background-image: url("/assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: 2000px 1100px;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+#aboutMePage {
+  /*background-image: url("/assets/images/background2.jpg");*/
+  background-color: #e3e3e3;
+  background-repeat: no-repeat;
+  background-size: 2000px 1100px;
+  background-position: center;
+  text-decoration-color: grey;
+}
+
+#education-interests-achievements {
+  background-color: #e3e3e3;
+  background-repeat: no-repeat;
+  background-size: 2000px 1100px;
+  background-position: center;
+  text-decoration-color: grey;
+}
+
+#projectsPage {
+  /*background-color: #2b2323;*/
+  background-image: url("/assets/images/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: 2500px 1875px;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+#spacing {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+#shift-left {
+  float: left !important;
+}
+
+#shift-right {
+  float: right !important;
+}
+
+#FoodEye {
+  background-image: url("/assets/images/foodeyelogo.png");
+  margin-left: 50px;
+  margin-right: 50px;
+  background-position: left;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+#ChromeExtensionTimer {
+  background-image: url("/assets/images/chromeExtensionPhoto.png");
+  margin-left: 50px;
+  margin-right: 50px;
+  background-position: left;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+#physicsLearner {
+  background-image: url("/assets/images/physicsproject.jpg");
+  margin-left: 50px;
+  margin-right: 50px;
+  background-position: left;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+#memeTexter {
+  background-image: url("/assets/images/memetexter.png");
+  margin-left: 50px;
+  margin-right: 50px;
+  background-position: left;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+#checkers {
+  background-image: url("/assets/images/checkersproject.jpg");
+  margin-left: 50px;
+  margin-right: 50px;
+  background-position: left;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+#carracer {
+  background-image: url("/assets/images/carracerproject.jpg");
+  margin-left: 50px;
+  margin-right: 50px;
+  background-position: left;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+#physicsLearner:hover,
+#checkers:hover,
+#carracer:hover,
+#memeTexter:hover,
+#FoodEye:hover,
+#ChromeExtensionTimer:hover {
+  opacity: 0.5;
+  background-size: 170%;
+  transition-duration: 1s;
+}
+
+#educationText,
+#achievementsText,
+#interestsText {
+  text-align: left;
+  vertical-align: middle;
+  opacity: 0;
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 50px;
+  transition-duration: 0.5s;
+
+  @media (min-width: 992px) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (max-width: 992px) {
+    padding-top: 0;
+  }
+}
+
+#educationSquare {
+  background-image: url("/assets/images/educationbackground.jpg");
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+#interestsSquare {
+  background-image: url("/assets/images/interestsbackground.png");
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+#achievementsSquare {
+  background-image: url("/assets/images/achievementsbackground.jpg");
+  background-position: top;
+  background-size: auto;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+h1.titlefont {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 500%;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h1.title2font {
+  margin-top: 0;
+  padding-bottom: 20px;
+  margin-bottom: 0.5rem;
+  font-size: 250%;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+img.animated-gif {
+  width: 120px;
+  height: auto;
+  transition-duration: 1s;
+}
+
+img:hover {
+  opacity: 0.7;
+  transition-duration: 1s;
+}
+
+img.img-profile {
+  border-radius: 50%;
+}
+
+img.img-profile:hover {
+  width: 210px;
+  height: auto;
+  transition-duration: 1s;
+}
+
+#iconleft {
+  margin-right: 50px;
+}
+
+#iconright {
+  margin-left: 50px;
+}
+
+img.smicon:hover {
+  width: 60px;
+  height: auto;
+  opacity: 0.4;
+  transition-duration: 1s;
+}
+
+img.mdicon:hover {
+  width: 75px;
+  height: auto;
+  opacity: 0.4;
+  transition-duration: 1s;
+}
+
+img.mdicon-js:hover {
+  height: 75px;
+  width: auto;
+  opacity: 0.4;
+  transition-duration: 1s;
+}
+
+.description-square {
+  max-width: 600px;
+}
