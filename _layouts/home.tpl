@@ -1,8 +1,6 @@
 ---
 layout: default
-
 ---
-
 
 <!--<nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
     <div class="container-fluid">
@@ -42,20 +40,22 @@ layout: default
 <!--Titlepage-->
 <div id="titlepage">
   <!--Header-->
-  <div class="p-5">
-  </div>
 
-  <div class="p-2">
-  </div>
-
-  <div class="p-5 mb-0 text-white">
+  <div class="title-page-container mb-0 text-white">
     <div class="container">
       <div class="row">
-        <div class="col">
+       <!-- image-->
+        <div class="col-md-12">
           <div class="text-center">
-            <h1 class="titlefont">
-              Jeffrey Ng
-            </h1>
+              <h1 class="titlefont">
+                <span class="first-name">
+                  Jeffrey
+                </span>
+                <span class="last-name">
+                 Ng
+                </span>
+              </h1>
+              <div class="marker"></div>
           </div>
         </div>
       </div>
@@ -63,21 +63,6 @@ layout: default
   </div>
 
   <div class="p-3">
-  </div>
-
-  <!-- image-->
-  <div class="text-center">
-    <div class="firstImage">
-      <img src="/assets/images/profilePhoto.jpg" width="200" height="auto" class="img-profile">
-    </div>
-  </div>
-
-
-  <!-- spacing-->
-  <div class="p-4">
-  </div>
-
-  <div class="p-4">
   </div>
 
   <!-- Top Description-->
@@ -87,13 +72,26 @@ layout: default
         <div class="row">
           <div class="col">
             <div class="text-center">
-              <h3>
-                ~ Be The Change You Wish To See In The World ~
-                <br>
-              </h3>
-              <h5>
-                <i> — Mahatma Gandhi </i>
-              </h5>
+              <div class="width-md">
+                {% for item in page.title-description %}
+                  <div class="typewriter">
+                    <div class="typewriter-text">
+                      <h3>
+                        {{item.header}}
+                      </h3>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+              <div class="width-sm">
+                {% for item in page.title-description-3 %}
+                  <div class="row title-description-sm">
+                    <h3>
+                      {{item.header}}
+                    </h3>
+                  </div>
+                {% endfor %}
+              </div>
             </div>
           </div>
         </div>
@@ -101,27 +99,14 @@ layout: default
     </div>
   </div>
 
-  <div class="p-3">
-  </div>
-
-
-  <div class="p-1 mb-1 text-white">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="text-center">
-            <a href="#aboutMePage">
-              <img class="animated-gif" src="/assets/images/scrolldown.gif">
-            </a>
-          </div>
-        </div>
-      </div>
+  <div class="down-gif p-1 mb-1 text-white">
+    <div class="text-center">
+      <a href="#aboutMePage">
+        <img class="animated-gif" src="/assets/images/scrolldown.gif">
+      </a>
     </div>
   </div>
 
-
-  <div class="p-5">
-  </div>
 
 </div>
 
@@ -370,9 +355,6 @@ layout: default
 
 <div id="education-interests-achievements">
 
-  <div class="p-5">
-  </div>
-
   <div class="text-center">
     <div class="text-white">
       <div class="container-fluid">
@@ -453,10 +435,6 @@ layout: default
       </div>
     </div>
   </div>
-
-  <div class="p-5">
-  </div>
-
 </div>
 
 

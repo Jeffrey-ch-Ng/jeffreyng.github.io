@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include head.inc %}
+    {% include head.inc %}
 
-<body>
-    {{ content }}
-</body>
+    <body>
+        {{ content }}
+    </body>
+</html>

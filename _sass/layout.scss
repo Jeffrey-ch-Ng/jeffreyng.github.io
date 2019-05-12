@@ -1,9 +1,9 @@
 h1, h2, h3 {
-  font-family: "Avenir Light", "Arial Light", sans-serif;
+  font-family: Courier, monospace;
 }
 
-h4, h5, p {
-  font-family: "Roboto";
+h4, h5, p, li, div {
+  font-family: 'Raleway', sans-serif;
 }
 
 .flex-row {
@@ -64,7 +64,21 @@ h4, h5, p {
   border-top: 2px solid white;
 }
 
+.title-page-container {
+  padding: 250px 0 50px;
+  @media (max-width: 767px) {
+    padding-top: 200px;
+  }
+}
+
+.down-gif {
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+}
+
 #titlepage {
+  min-height: 1000px;
   background-image: url("/assets/images/background.png");
   background-repeat: no-repeat;
   background-size: 2000px 1100px;
@@ -75,18 +89,18 @@ h4, h5, p {
 #aboutMePage {
   /*background-image: url("/assets/images/background2.jpg");*/
   background-color: #e3e3e3;
-  background-repeat: no-repeat;
-  background-size: 2000px 1100px;
-  background-position: center;
   text-decoration-color: grey;
 }
 
 #education-interests-achievements {
   background-color: #e3e3e3;
-  background-repeat: no-repeat;
-  background-size: 2000px 1100px;
-  background-position: center;
+  padding: 50px 0;
   text-decoration-color: grey;
+}
+
+.title-description-sm {
+  justify-content: center;
+  margin: 10px 0;
 }
 
 #projectsPage {
@@ -209,6 +223,12 @@ h4, h5, p {
   }
 }
 
+.quotes {
+  h3 {
+    margin: 0;
+  }
+}
+
 #educationSquare {
   background-image: url("/assets/images/educationbackground.jpg");
   background-position: center;
@@ -238,13 +258,17 @@ h4, h5, p {
 
 h1.titlefont {
   margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 500%;
-  margin-bottom: 0.5rem;
-  font-family: inherit;
+  padding-bottom: 10px;
+  font-size: 120px;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 500;
   line-height: 1.2;
   color: inherit;
+  @media (max-width: 767px) {
+    span {
+      font-size: 80px;
+    }
+  }
 }
 
 h1.title2font {
@@ -253,7 +277,6 @@ h1.title2font {
   margin-bottom: 0.5rem;
   font-size: 250%;
   margin-bottom: 0.5rem;
-  font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
   color: inherit;
@@ -311,4 +334,86 @@ img.mdicon-js:hover {
 
 .description-square {
   max-width: 600px;
+}
+
+.typewriter {
+  font-family: Courier, monospace;
+  display: inline-block;
+}
+
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 740px;
+  letter-spacing: 2px;
+  animation: typing 5s steps(35, end), blink .75s step-end infinite;
+  white-space: nowrap;
+  font-family: Courier, monospace;
+  border-right: 4px solid white;
+  box-sizing: border-box;
+}
+
+.width-md {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.width-sm {
+  @media (min-width: 767px) {
+    display: none;
+  }
+}
+
+
+@keyframes typing {
+  from { 
+      width: 0% 
+  }
+  to { 
+      width: 100% 
+  }
+}
+
+@keyframes blink {
+  from, to { 
+      border-color: transparent 
+  }
+  50% { 
+      border-color: white; 
+  }
+}
+
+//Pressed Animation
+
+.marker, .r, .e1, .s1, .s2, .e2 {
+  animation-timing-function: cubic-bezier(0.15,-0.01, 0.58, 1);
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+.marker {
+  position: absolute;     
+  top: 10rem;
+  height: 0.5rem;
+  width: 30rem;
+  left: 14rem;
+  @media (max-width: 1200px) {
+    left: 8rem;
+  }
+  @media (max-width: 992px) {
+    display: none;
+  }
+  background-color: white;
+  animation-name: marker;
+}
+
+.first-name { animation-name: first-name; }
+.last-name { animation-name: last-name; }
+
+@keyframes marker { 
+  0%, 25% { transform: translateX(0); width: 30rem;}
+  25%, 60% {width: 10rem;}
+  25%, 60% { transform: translateX(34rem); }
+  75%, 100% {transform: translateX(0); width: 30rem;}
 }
