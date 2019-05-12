@@ -141,7 +141,7 @@ layout: default
     <div class="container">
       <div class="row">
         <div class="col">
-          <a href="Jeffrey_Ng_Resume.pdf" download>
+          <a href="/assets/files/Jeffrey Ng Resume.pdf" download>
             <button type="button" class="btn btn-outline-dark" id="resumeButton">Resume</button>
           </a>
         </div>
