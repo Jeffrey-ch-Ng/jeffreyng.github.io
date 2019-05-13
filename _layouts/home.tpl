@@ -166,8 +166,7 @@ layout: default
         <div class="col-sm-10">
           <div class="text-center">
             <h5>
-              A well-rounded, self-motivated individual who enjoys taking on challenges.<br> Interested in engineering,
-              computer science, technology, and business.
+              {{page.test}}
             </h5>
           </div>
         </div>
