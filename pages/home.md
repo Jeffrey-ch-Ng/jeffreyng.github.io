@@ -24,16 +24,22 @@ skillsBars:
       background-color: '#b2b2b2'
     - img-text: /assets/images/html-logo.png
       skill-name: HTML
+      background-color: '#9f9f9f'
     - img-text: /assets/images/css-logo.png
-      skill-name: CSS
+      skill-name: CSS/Sass
+      background-color: '#8d8d8d'
     - img-text: /assets/images/javascript-logo.png
       skill-name: JavaScript
+      background-color: '#7e7e7e'
     - img-text: /assets/images/c++-logo.png
       skill-name: C++
-    - img-text: /assets/images/nodejs-logo.png
-      skill-name: NodeJS
+      background-color: '#727272'
+    - img-text: /assets/images/react-logo.png
+      skill-name: React
+      background-color: '#656565'
     - img-text: /assets/images/python-logo.png
       skill-name: Python
+      background-color: '#515151'
 
     
 
