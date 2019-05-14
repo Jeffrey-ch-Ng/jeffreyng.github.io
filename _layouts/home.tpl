@@ -119,8 +119,6 @@ layout: default
   </div>
   <div class="p-2">
   </div>
-  <div class="p-2">
-  </div>
 
   <!-- top prgh-->
   <div id="aboutprgh">
