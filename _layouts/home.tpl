@@ -122,55 +122,34 @@ layout: default
   <div class="p-2">
   </div>
 
-  <div class="text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <a href="/assets/files/Jeffrey Ng Resume.pdf" download>
-            <button type="button" class="btn btn-outline-dark" id="resumeButton">Resume</button>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="p-4">
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="text-center">
-          <a href="https://github.com/Jeffrey-ch-Ng">
-            <img class="smicon" src="/assets/images/github.png" width="75px" height="auto" id="iconleft">
-          </a>
-          <a href="mailto:jc4ng@uwaterloo.ca">
-            <img class="smicon" src="/assets/images/mail.png" width="75px" height=auto>
-          </a>
-          <a href="https://www.linkedin.com/in/jeffrey-ng-025513144/">
-            <img class="smicon" src="/assets/images/linkedin.png" width="75px" height="auto" id="iconright">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="p-4">
-  </div>
-
   <!-- top prgh-->
   <div id="aboutprgh">
     <div class="container">
       <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-10">
-          <div class="text-center">
-            <h5>
-              {{page.test}}
-            </h5>
+        <div class="col-md-6 col-sm-12">
+          <div class="text-left text-center-sm">
+            <h1 class="title2font">{{page.about-me-title}}</h1>
+            <h5>{{page.aboutprgh | markdownify }}</h5>
           </div>
         </div>
-        <div class="col-sm-1"></div>
+        <div class="col-md-6 col-sm-12">
+          <div class="text-center">
+            <a href="/assets/files/Jeffrey-Ng-Resume.pdf">
+              <button type="button" class="btn btn-outline-dark" id="resumeButton">Resume</button>
+            </a>
+          </div>
+          <div class="text-center smicon-container">
+            <a href="https://github.com/Jeffrey-ch-Ng">
+              <img class="smicon" src="/assets/images/github.png">
+            </a>
+            <a href="mailto:jc4ng@uwaterloo.ca">
+              <img class="smicon" src="/assets/images/mail.png">
+            </a>
+            <a href="https://www.linkedin.com/in/jeffrey-ng-025513144/">
+              <img class="smicon" src="/assets/images/linkedin.png">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -210,130 +189,22 @@ layout: default
       <div class="text-center">
         <div class="text-white">
           <div class="row">
-            <div class="col">
-              <div id="bar-1">
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <img class="mdicon" src="/assets/images/java-logo.png" width="100px" height=auto>
-                <div class="p-2">
-                </div>
-                <h4>Java</h4>
-                <div class="p-2">
-                </div>
+            <div class="col-md-12">
+              <div class="skill-column-container">
+                {% for skill in page.skillsBars %}
+                  <div class="skill-column" style="background-color:{{skill.background-color}}">
+                    <img class="mdicon" src="{{skill.img-text}}">
+                    <h4>{{skill.skill-name}}</h4>
+                  </div>
+                {% endfor %}
               </div>
-            </div>
-            <div class="col">
-              <div id="bar-2">
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <img class="mdicon" src="/assets/images/html-logo.png" width="100px" height=auto>
-                <div class="p-2">
-                </div>
-                <h4>HTML</h4>
-                <div class="p-2">
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div id="bar-3">
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <img class="mdicon" src="/assets/images/css-logo.png" width="100px" height=auto>
-                <div class="p-2">
-                </div>
-                <h4>CSS</h4>
-                <div class="p-2">
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div id="bar-4">
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <img class="mdicon-js" src="/assets/images/javascript-logo.png" height="100px" width=auto>
-                <div class="p-2">
-                </div>
-                <h4>JavaScript</h4>
-                <div class="p-2">
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div id="bar-5">
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <img class="mdicon" src="/assets/images/c++-logo.png" width="100px" height=auto>
-                <div class="p-2">
-                </div>
-                <h4>C++</h4>
-                <div class="p-2">
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div id="bar-6">
-                <div class="p-3">
-                </div>
-                <div class="p-3">
-                </div>
-                <img class="mdicon" src="/assets/images/nodejs-logo.png" width="100px" height=auto>
-                <div class="p-2">
-                </div>
-                <h4>NodeJS</h4>
-                <div class="p-2">
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div id="bar-7">
-                <div class="p-3">
-                </div>
-                <img class="mdicon" src="/assets/images/python-logo.png" width="100px" height=auto>
-                <div class="p-2">
-                </div>
-                <h4>Python</h4>
-                <div class="p-2">
-                </div>
+              <div class="skill-row-container">
+                {% for skill in page.skillsBars %}
+                  <div class="skill-row" style="background-color:{{skill.background-color}}">
+                    <img class="mdicon" src="{{skill.img-text}}">
+                    <h4>{{skill.skill-name}}</h4>
+                  </div>
+                {% endfor %}
               </div>
             </div>
           </div>
@@ -341,8 +212,6 @@ layout: default
       </div>
     </div>
   </div>
-
-
 
   <div class="p-4">
   </div>
