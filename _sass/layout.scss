@@ -181,6 +181,8 @@ h4, h5, p, li, div {
 
 #aboutMePage {
   /*background-image: url("/assets/images/background2.jpg");*/
+  position: relative;
+  top: -4px;
   background-color: #e3e3e3;
   text-decoration-color: grey;
 }
