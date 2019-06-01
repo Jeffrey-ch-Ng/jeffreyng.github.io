@@ -225,74 +225,66 @@ layout: default
         <div class="row flex-row">
 
           <!-- education square-->
-          <div class="col-md-4 col-sm-12 col-xs-12 col-bordered description-square" id="educationSquare"
-            onmouseover="changeEducation()" onmouseout="revertEducation()">
-            <div class="p-2">
-            </div>
-            <h2>Education</h2>
-            <div class="p-4">
+          <div class="col-xs-12 col-bordered description-square" id="educationSquare">
+
+            <div class="hover-square">
+              <h2 id="educationTitle">Education</h2>
+
+              <div id="educationText">
+                Candidate for B.ASc in Systems Design Engineering at the Univeristy of Waterloo.
+                <div class="p-2">
+                </div>
+                <ul>
+                  <li> Presidents Scholarship of Distinction (2018)
+                </ul>
+              </div>
             </div>
 
-            <div id="educationText">
-              Candidate for B.ASc in Systems Design Engineering at the Univeristy of Waterloo.
-              <div class="p-2">
-              </div>
-              <ul>
-                <li> Presidents Scholarship of Distinction (2018)
-              </ul>
-            </div>
-            <div class="p-3">
-            </div>
+
           </div>
 
           <!-- intersts square-->
-          <div class="col-md-4 col-sm-12 col-xs-12 col-bordered description-square" id="interestsSquare"
-            onmouseover="changeInterests()" onmouseout="revertInterests()">
+          <div class="col-xs-12 col-bordered description-square" id="interestsSquare">
+            <div class="hover-square">
 
-            <div class="p-2">
-            </div>
-            <h2>Interests</h2>
-            <div class="p-4">
-            </div>
+              <h2 id="interestsTitle">Interests</h2>
 
-            <div id="interestsText">
-              Some of my interests include, but are not limited to:
-              <div class="p-2">
+
+              <div id="interestsText">
+                Some of my interests include, but are not limited to:
+                <div class="p-2">
+                </div>
+                <ul>
+                  <li> Swimming
+                  <li> Badminton
+                  <li> History
+                  <li> Geography
+                  <li> Travel
+                </ul>
               </div>
-              <ul>
-                <li> Swimming
-                <li> Badminton
-                <li> History
-                <li> Geography
-                <li> Travel
-              </ul>
-            </div>
-            <div class="p-3">
             </div>
 
           </div>
 
           <!-- achievements square-->
-          <div class="col-md-4 col-sm-12 col-xs-12 col-bordered description-square" id="achievementsSquare"
-            onmouseover="changeAchievements()" onmouseout="revertAchievements()">
-            <div class="p-2">
+          <div class="col-xs-12 col-bordered description-square" id="achievementsSquare">
+            <div class="hover-square">
+              <h2 id="achievementsTitle">Achievements</h2>
+
+              <div id="achievementsText">
+                <ul>
+                  <li> Buying and Merchandising Operations Event - First Place Internationally (2017)
+                    <div class="p-2">
+                    </div>
+                  <li> InspireHacks2017 MLH Localhost Hackday - First Place (2017)
+                    <div class="p-2">
+                    </div>
+                  <li> University of Toronto High School Design Competition - First Place (2017)
+                </ul>
+              </div>
             </div>
-            <h2>Achievements</h2>
-            <div class="p-4">
-            </div>
-            <div id="achievementsText">
-              <ul>
-                <li> Buying and Merchandising Operations Event - First Place Internationally (2017)
-                  <div class="p-2">
-                  </div>
-                <li> InspireHacks2017 MLH Localhost Hackday - First Place (2017)
-                  <div class="p-2">
-                  </div>
-                <li> University of Toronto High School Design Competition - First Place (2017)
-              </ul>
-            </div>
-            <div class="p-5">
-            </div>
+
+
 
           </div>
         </div>

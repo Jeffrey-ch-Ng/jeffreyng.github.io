@@ -54,34 +54,3 @@
     $('.quotes').delay(1000).fadeTo(1000,1);
 
   });
-
-
-  function changeEducation() {
-    document.getElementById("educationSquare").style.opacity = 0.5;
-    document.getElementById("educationText").style.opacity = 1;
-  }
-
-  function revertEducation() {
-    document.getElementById("educationSquare").style.opacity = 1;
-    document.getElementById("educationText").style.opacity = 0;
-  }
-
-  function changeInterests() {
-    document.getElementById("interestsSquare").style.opacity = 0.5;
-    document.getElementById("interestsText").style.opacity = 1;
-  }
-
-  function revertInterests() {
-    document.getElementById("interestsSquare").style.opacity = 1;
-    document.getElementById("interestsText").style.opacity = 0;
-  }
-
-  function changeAchievements() {
-    document.getElementById("achievementsSquare").style.opacity = 0.5;
-    document.getElementById("achievementsText").style.opacity = 1;
-  }
-
-  function revertAchievements() {
-    document.getElementById("achievementsSquare").style.opacity = 1;
-    document.getElementById("achievementsText").style.opacity = 0;
-  }

@@ -297,58 +297,92 @@ h4, h5, p, li, div {
   transition-duration: 1s;
 }
 
-#educationText,
-#achievementsText,
-#interestsText {
-  text-align: left;
-  vertical-align: middle;
-  opacity: 0;
-  font-size: 20px;
-  padding-bottom: 10px;
-  padding-top: 50px;
-  transition-duration: 0.5s;
-
-  @media (min-width: 992px) {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
-  @media (max-width: 992px) {
-    padding-top: 0;
-  }
-}
-
 .quotes {
   h3 {
     margin: 0;
   }
 }
 
-#educationSquare {
-  background-image: url("/assets/images/educationbackground.jpg");
+#educationSquare, 
+#interestsSquare,
+#achievementsSquare {
+  border-radius: 10px;
+  margin: 10px;
+
+  .hover-square {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
   opacity: 1;
   transition-duration: 0.5s;
+  min-height: 450px;
+
+  &:hover {
+    #educationTitle,
+    #interestsTitle,
+    #achievementsTitle {
+      transition: opacity 0.5s ease-out;
+      height: 0;
+      width: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+
+    #educationText,
+    #achievementsText,
+    #interestsText {
+      transition: opacity 0.5s ease-in;
+      opacity: 1;
+      height: auto;
+      width: auto;
+      overflow: hidden;
+      padding: 0 20px;
+    } 
+  }
+
+  #educationTitle,
+  #interestsTitle,
+  #achievementsTitle {
+    font-size: 40px;
+    transition: opacity 0.5s ease-in;
+    opacity: 1;
+    height: auto;
+    width: auto;
+  }
+
+  #educationText,
+  #achievementsText,
+  #interestsText {
+    text-align: left;
+    vertical-align: middle;
+    font-size: 20px;
+    transition: opacity 0.5s ease-out;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+}
+
+#educationSquare {
+  background-image: url("/assets/images/educationbackground.jpg");
 }
 
 #interestsSquare {
   background-image: url("/assets/images/interestsbackground.png");
-  background-position: center;
-  background-size: auto;
-  background-repeat: no-repeat;
-  opacity: 1;
-  transition-duration: 0.5s;
 }
 
 #achievementsSquare {
   background-image: url("/assets/images/achievementsbackground.jpg");
   background-position: top;
-  background-size: auto;
-  background-repeat: no-repeat;
-  opacity: 1;
-  transition-duration: 0.5s;
 }
 
 h1.titlefont {
@@ -434,7 +468,11 @@ img.mdicon:hover {
 }
 
 .description-square {
-  max-width: 600px;
+  max-width: 500px;
+  width: 30%;
+  @media (max-width: 992px) {
+    width: 80%;
+  }
 }
 
 .typewriter {
