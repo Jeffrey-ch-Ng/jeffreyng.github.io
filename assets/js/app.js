@@ -24,7 +24,7 @@
       if($('#skillsTitle').offset().top + $('#skillsTitle').outerHeight() < ($(window).height() + $(window).scrollTop())){
         $('#skillsTitle').animate({'opacity':'1'},1000);
       }
-
+/*
       if($('#foodEyeText').offset().top + $('#foodEyeText').outerHeight() < ($(window).height() + $(window).scrollTop())){
         $('#foodEyeText').animate({'opacity':'1'},1000);
       }
@@ -44,7 +44,7 @@
       if($('#carracerText').offset().top + $('#carracerText').outerHeight() < ($(window).height() + $(window).scrollTop())){
         $('#carracerText').animate({'opacity':'1'},1000);
       }
-
+*/
     });
 
 

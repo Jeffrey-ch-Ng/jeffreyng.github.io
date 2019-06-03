@@ -219,6 +219,93 @@ h4, h5, p, li, div {
 #shift-right {
   float: right !important;
 }
+.project-row-space {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-col-center {
+
+  display: flex;
+  width: 30%;
+  @media (max-width: 992px) {
+    width: 48%;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.project-container {
+
+  box-shadow: 1px 1px 10px 1px rgba(29, 29, 29, 0.75);
+  border-radius: 20px;
+  transition-duration: 0.5s;
+  margin: 20px 0 40px;
+  width: 100%;
+  
+
+  &:hover {
+    box-shadow: 3px 3px 30px 3px rgba(255, 255, 255, 0.75);
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .project-image {
+    height: 150px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .project-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: #e3e3e3;
+    min-height: 300px;
+    padding: 20px;
+    height: 71%;
+
+    .proj-title {
+      overflow-wrap: break-word;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+    }
+
+    .proj-languages {
+      font-size: 16px;
+      font-style: italic;
+      color: rgb(0, 117, 196);
+    }
+
+    .proj-prgh {
+      color: #515151;
+    }
+
+    .proj-icon-container {
+      transition-duration: 0.5s;
+      margin-bottom: 0;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+      img:hover {
+        transition-duration: 0.5s;
+        opacity: 0.5;
+      }
+    }
+
+  }
+}
 
 #FoodEye {
   background-image: url("/assets/images/foodeyelogo.png");
@@ -325,6 +412,7 @@ h4, h5, p, li, div {
   min-height: 450px;
 
   &:hover {
+    opacity: 0.75;
     #educationTitle,
     #interestsTitle,
     #achievementsTitle {
@@ -338,6 +426,7 @@ h4, h5, p, li, div {
     #educationText,
     #achievementsText,
     #interestsText {
+      text-align: center;
       transition: opacity 0.5s ease-in;
       opacity: 1;
       height: auto;
@@ -403,7 +492,7 @@ h1.titlefont {
 h1.title2font {
   margin-top: 0;
   margin-bottom: 30px;
-  font-size: 250%;
+  font-size: 300%;
   font-weight: 500;
   line-height: 1.2;
   color: inherit;

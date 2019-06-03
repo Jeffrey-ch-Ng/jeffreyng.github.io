@@ -231,12 +231,10 @@ layout: default
               <h2 id="educationTitle">Education</h2>
 
               <div id="educationText">
-                Candidate for B.ASc in Systems Design Engineering at the Univeristy of Waterloo.
+                <b>Candidate for B.ASc in Systems Design Engineering at the Univeristy of Waterloo.</b>
                 <div class="p-2">
                 </div>
-                <ul>
-                  <li> Presidents Scholarship of Distinction (2018)
-                </ul>
+                  Presidents Scholarship of Distinction (2018)
               </div>
             </div>
 
@@ -253,14 +251,13 @@ layout: default
               <div id="interestsText">
                 Some of my interests include, but are not limited to:
                 <div class="p-2">
-                </div>
-                <ul>
-                  <li> Swimming
-                  <li> Badminton
-                  <li> History
-                  <li> Geography
-                  <li> Travel
-                </ul>
+                </div><b>
+                  Swimming <br/>
+                  Badminton <br/>
+                  History <br/>
+                  Geography <br/>
+                  Travel <br/>
+                  </b>
               </div>
             </div>
 
@@ -272,20 +269,15 @@ layout: default
               <h2 id="achievementsTitle">Achievements</h2>
 
               <div id="achievementsText">
-                <ul>
-                  <li> Buying and Merchandising Operations Event - First Place Internationally (2017)
+                  <b>First Place Internationally (2017)</b><br/> Buying and Merchandising Operations Event 
                     <div class="p-2">
                     </div>
-                  <li> InspireHacks2017 MLH Localhost Hackday - First Place (2017)
+                  <b>First Place (2017)</b><br/>InspireHacks2017 MLH Localhost Hackday 
                     <div class="p-2">
                     </div>
-                  <li> University of Toronto High School Design Competition - First Place (2017)
-                </ul>
+                  <b>First Place (2017)</b><br/>University of Toronto High School Design Competition 
               </div>
             </div>
-
-
-
           </div>
         </div>
       </div>
@@ -298,168 +290,44 @@ layout: default
   <div class="p-5">
   </div>
 
-  <div class="text-white">
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="text-left text-center-sm">
-            <h1 class="title2font">Projects</h1>
-          </div>
-        </div>
-      </div>
-      <div class="p-3">
-      </div>
-    </div>
-
-    <div class="container">
-
-      <div class="p-2">
-      </div>
-      <div class="row">
-
-        <div class="col-sm-3" id="FoodEye">
-          <div class="p-2">
-          </div>
-        </div>
-
-        <div class="col-sm-7" id="left-border">
-          <div class="text-left">
-            <div id="foodEyeText">
-              <div class="spaceleft">
-                <h3><i>FoodEye </i></h3>
-                <p> Using the Watson Visual Recognition API, NodeJS, and HTML,
-                  a user-friendly application that can take pictures of food
-                  items and identify what food item is was created.</p>
-              </div>
-            </div>
-          </div>
+  <div class="container">
+    <div class="row text-white">
+      <div class="col">
+        <div class="text-left text-center-sm">
+          <h1 class="title2font">Projects</h1>
         </div>
       </div>
     </div>
-
-
-    <div class="p-3">
-    </div>
-
-    <div class="container">
-      <div class="p-2">
-      </div>
-
-      <div class="row">
-        <div class="col-sm-3" id="ChromeExtensionTimer">
-          <div class="p-4">
-          </div>
-        </div>
-        <div class="col-sm-7" id="left-border">
-          <div class="text-left">
-            <div id="chromeExtensionText">
-              <div class="spaceleft">
-                <h3><i>Chrome Extension Timer </i></h3>
-                <p> Using HTML, CSS, and JavaScript, a Chrome Extension Timer that
-                  keeps track of time while browsing.
-                  Users can set the time and wait for it to countdown.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="p-3">
-    </div>
-
-    <div class="container">
-      <div class="p-2">
-      </div>
-      <div class="row">
-        <div class="col-sm-3" id="physicsLearner">
-          <div class="p-4">
-          </div>
-        </div>
-        <div class="col-sm-7" id="left-border">
-          <div class="text-left">
-            <div id="physicsLearnertext">
-              <div class="spaceleft">
-                <h3><i>Physics Tutorial Learner </i></h3>
-                <p> Though STEM is growing in importance, many students struggle to aquire the knowledge required for
-                  these fields. Using Java GUI, the Physics Tutorial Learner was created to help teach students these
-                  topics through experiential
-                  learning.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="p-2">
-    </div>
-
-
-    <div class="container">
-
-      <div class="p-2">
-      </div>
-      <div class="row">
-        <div class="col-sm-3" id="checkers">
-          <div class="full-border">
-            <div class="p-4">
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-7" id="left-border">
-          <div class="text-left">
-            <div id="checkersText">
-              <div class="spaceleft">
-                <h3><i>Checkers</i> </h3>
-                <p>Using Java, a two-player checkers game was created with personalized features. Players can select the
-                  colour of their pieces, and a comprehensive instructions menu helps players navigate the challenges of
-                  a checkers game. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="p-2">
-    </div>
-
-
-    <div class="container">
-
-      <div class="p-2">
-      </div>
-
-      <div class="row">
-        <div class="col-sm-3" id="carracer">
-          <div class="text-center">
-            <div class="p-4">
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-7" id="left-border">
-          <div class="text-left">
-            <div id="carracerText">
-              <div class="spaceleft">
-                <h3><i>Car Racer </i></h3>
-                <p>A 3-D car racer game was created with Python. In this game, players move thier car to dodge obstacles
-                  in a simulated 3-D environment. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="p-2">
-    </div>
-
-    <div class="p-5">
-    </div>
-
-
   </div>
+
+  <div class="container">
+    <div class="row project-row-space">
+      {% for project in page.projects %}
+        <div class="project-col-center">
+          <div class="project-container">
+            <div class="project-image" style="background-image: url('{{project.background-image}}');">
+            </div>
+            <div class="project-desc">
+              <div class="proj-text-container">
+                <h3 class="proj-title">{{project.title}}</h3>
+                <h5 class="proj-languages">{{project.languages}}</h5>
+                <p class="proj-prgh">{{project.description}}</p>
+              </div>
+              <div class="proj-icon-container">
+                <a href="{{project.github-link}}">
+                  <img src="/assets/images/github.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="p-5">
+  </div>
+
 </div>
 
 <div id="contact">
