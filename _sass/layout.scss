@@ -461,6 +461,13 @@ h4, h5, p, li, div {
 
 }
 
+#contact {
+  a:hover {
+    text-decoration: none;
+    color: none;
+  }
+}
+
 #educationSquare {
   background-image: url("/assets/images/educationbackground.jpg");
 }
