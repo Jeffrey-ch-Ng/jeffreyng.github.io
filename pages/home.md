@@ -16,7 +16,7 @@ about-me-title: About Me
 aboutprgh: |
     I'm a Systems Design Engineering student at the University of Waterloo interested in software development and product management. 
     <br><br>
-    __Actively looking for opportunities in software development for the Fall 2019 work term (September to December)__. 
+    __Actively looking for opportunities in software development for the Summer 2020 work term (May to August)__. 
 
 skillsBars: 
     - img-text: /assets/images/java-logo.png
