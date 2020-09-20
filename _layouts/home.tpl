@@ -131,12 +131,7 @@ layout: default
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
-          <div class="text-center">
-            <a href="/assets/files/Jeffrey-Ng-Resume.pdf">
-              <button type="button" class="btn btn-outline-dark" id="resumeButton">Resume</button>
-            </a>
-          </div>
-          <div class="text-center smicon-container">
+          <div class="text-center smicon-container about-icon-section">
             <a href="https://github.com/Jeffrey-ch-Ng">
               <img class="smicon" src="/assets/images/github.png">
             </a>
@@ -367,14 +362,6 @@ layout: default
     </div>
 
     <div class="p-4">
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <div class="text-center">
-          <h5>(647)-771-8718</h5>
-        </div>
-      </div>
     </div>
 
   </div>
